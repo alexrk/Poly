@@ -317,3 +317,45 @@ extension Poly16 {
         ]
     }
 }
+
+extension Poly16: CustomStringConvertible {
+    public var description: String {
+        let str: String
+        switch self {
+        case .a(let a):
+            str = String(describing: a)
+        case .b(let b):
+            str = String(describing: b)
+        case .c(let c):
+            str = String(describing: c)
+        case .d(let d):
+            str = String(describing: d)
+        case .e(let e):
+            str = String(describing: e)
+        case .f(let f):
+            str = String(describing: f)
+        case .g(let g):
+            str = String(describing: g)
+        case .h(let h):
+            str = String(describing: h)
+        case .i(let i):
+            str = String(describing: i)
+        case .j(let j):
+            str = String(describing: j)
+        case .k(let k):
+            str = String(describing: k)
+        case .l(let l):
+            str = String(describing: l)
+        case .m(let m):
+            str = String(describing: m)
+        case .n(let n):
+            str = String(describing: n)
+        case .o(let o):
+            str = String(describing: o)
+        case .p(let p):
+            str = String(describing: p)
+        }
+
+        return "Poly(\(str))"
+    }
+}
